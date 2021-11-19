@@ -3,7 +3,7 @@ A flutter package that developers have pretty logs instead just printing everyth
 
 ## Features
 
-Makes it easy to log to console without using print in a colorful way, with multiple colors.
+Makes it easy to log to console without using print in a colorful way, with multiple colors, and it works only in debug mode, makeing it perfect for pros.
 
 
 ## Getting started
