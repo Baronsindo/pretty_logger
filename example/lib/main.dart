@@ -3,7 +3,7 @@ import 'package:pretty_logs/pretty_logs.dart';
 
 void main() {
   Logger.info('Hello buddy');
-  Logger.success('Welcome to KindaCode.com');
+  Logger.success('Welcome');
   Logger.warning('I am a bad man. Be careful');
   Logger.error('Ops. We ran into some trouble');
 
@@ -13,6 +13,7 @@ void main() {
   Logger.cyan('cyan');
   Logger.green('green');
   Logger.yellow('yellow');
+  Logger.blue('Blue');
 
   runApp(const MyApp());
 }
