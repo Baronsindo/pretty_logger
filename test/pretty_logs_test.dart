@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pretty_logs/pretty_logs.dart';
+import 'package:pretty_logger/pretty_logger.dart';
 
 void main() {
   // test('adds one to input values', () {

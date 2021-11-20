@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pretty_logs/pretty_logs.dart';
+import 'package:pretty_logger/pretty_logger.dart';
 
 void main() {
   Logger.info('Hello buddy');

@@ -1,4 +1,4 @@
-library pretty_logs;
+library pretty_logger;
 
 import 'dart:developer' as developer;
 import 'package:flutter/foundation.dart';

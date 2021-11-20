@@ -12,12 +12,12 @@ Add the following to your pubspec.yaml file:
 
 ```yaml
 dependencies:
-  pretty_logs: any
+  pretty_logger: any
 ```
 
 Import the package.
 ```dart
-import 'package:pretty_logs/pretty_logs.dart';
+import 'package:pretty_logger/pretty_logger.dart';
 ```
 
 

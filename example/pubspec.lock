@@ -102,7 +102,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  pretty_logs:
+  pretty_logger:
     dependency: "direct dev"
     description:
       path: ".."
