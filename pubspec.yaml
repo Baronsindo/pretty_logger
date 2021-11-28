@@ -1,6 +1,6 @@
 name: pretty_logger
 description: A flutter package that developers have pretty logs instead just printing everything like a newbie.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/Baronsindo/pretty_logger
 repository: https://github.com/Baronsindo/pretty_logger
 
