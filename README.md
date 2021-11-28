@@ -27,17 +27,17 @@ import 'package:pretty_logger/pretty_logger.dart';
 ```dart
 
 void main() {
-  Logger.info('Hello buddy');
-  Logger.success('Welcome');
-  Logger.warning('I am a bad man. Be careful');
-  Logger.error('Ops. We ran into some trouble');
+  PLog.info('Hello buddy');
+  PLog.success('Welcome');
+  PLog.warning('I am a bad man. Be careful');
+  PLog.error('Ops. We ran into some trouble');
 
-  Logger.black('black');
-  Logger.red('red');
-  Logger.white('white');
-  Logger.cyan('cyan');
-  Logger.green('green');
-  Logger.yellow('yellow');
+  PLog.black('black');
+  PLog.red('red');
+  PLog.white('white');
+  PLog.cyan('cyan');
+  PLog.green('green');
+  PLog.yellow('yellow');
 
   runApp(const MyApp());
 }
@@ -48,18 +48,18 @@ void main() {
 Main function
 | Function usage | Output Color |
 |--|--|
-|`Logger.info('Hello buddy');`|Blue|
-|`Logger.success('Welcome');`|Green|
-|`Logger.warning('Be careful');`|Yellow|
-|`Logger.error('Ops. trouble')`|Red|
+|`PLog.info('Hello buddy');`|Blue|
+|`PLog.success('Welcome');`|Green|
+|`PLog.warning('Be careful');`|Yellow|
+|`PLog.error('Ops. trouble')`|Red|
 
 Additional colors
 | Function usage | Output Color |
 |--|--|
-|`Logger.black('black');`|Black|
-|`Logger.red('red');`|Red|
-|`Logger.white('white');`|White|
-|`Logger.cyan('cyan');`|Cyan|
-|`Logger.green('green');`|Green|
-|`Logger.yellow('yellow');`|Yellow|
-|`Logger.blue('Blue');`|Blue|
+|`PLog.black('black');`|Black|
+|`PLog.red('red');`|Red|
+|`PLog.white('white');`|White|
+|`PLog.cyan('cyan');`|Cyan|
+|`PLog.green('green');`|Green|
+|`PLog.yellow('yellow');`|Yellow|
+|`PLog.blue('Blue');`|Blue|

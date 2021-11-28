@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:pretty_logger/pretty_logger.dart';
 
 void main() {
-  Logger.info('Hello buddy');
-  Logger.success('Welcome');
-  Logger.warning('I am a bad man. Be careful');
-  Logger.error('Ops. We ran into some trouble');
+  PLog.info('Hello buddy');
+  PLog.success('Welcome');
+  PLog.warning('I am a bad man. Be careful');
+  PLog.error('Ops. We ran into some trouble');
 
-  Logger.black('black');
-  Logger.red('red');
-  Logger.white('white');
-  Logger.cyan('cyan');
-  Logger.green('green');
-  Logger.yellow('yellow');
-  Logger.blue('Blue');
+  PLog.black('black');
+  PLog.red('red');
+  PLog.white('white');
+  PLog.cyan('cyan');
+  PLog.green('green');
+  PLog.yellow('yellow');
+  PLog.blue('Blue');
 
   runApp(const MyApp());
 }
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
-      Logger.success('counter shows : $_counter');
+      PLog.success('counter shows : $_counter');
     });
   }
 
