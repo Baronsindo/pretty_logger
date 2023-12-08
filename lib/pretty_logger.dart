@@ -1,6 +1,7 @@
 library pretty_logger;
 
 import 'dart:developer' as developer;
+
 import 'package:flutter/foundation.dart';
 
 /// deprecated
@@ -143,5 +144,30 @@ class PLog {
   /// param [msg] is the message to be logged to the console
   static void cyan(String msg) {
     if (kDebugMode) developer.log('\x1B[36m$msg\x1B[0m');
+  }
+
+  /// print text to console in a custom color
+  /// param [msg] is the message to be logged to the console
+  static void custom(String msg, [String? hexColor]) {
+    if (hexColor == null ||
+        !hexColor.startsWith('#') ||
+        (hexColor.length != 7 && hexColor.length != 4)) {
+      PLog.blue(msg);
+      return;
+    }
+
+    hexColor = hexColor.replaceAll('#', '');
+    if (hexColor.length == 3) {
+      hexColor =
+          '${hexColor[0]}${hexColor[0]}${hexColor[1]}${hexColor[1]}${hexColor[2]}${hexColor[2]}';
+    }
+
+    int red = int.parse(hexColor.substring(0, 2), radix: 16);
+    int green = int.parse(hexColor.substring(2, 4), radix: 16);
+    int blue = int.parse(hexColor.substring(4, 6), radix: 16);
+
+    String colorEscapeCode = '\x1B[38;2;$red;$green;${blue}m';
+
+    if (kDebugMode) developer.log('$colorEscapeCode$msg\x1B[0m');
   }
 }
